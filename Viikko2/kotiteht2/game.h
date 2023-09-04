@@ -1,6 +1,6 @@
 #ifndef GAME_H
 #define GAME_H
-#include <iostream>     // Inculde necessary libraries
+#include <iostream>     // Include necessary libraries
 #include <cstdlib>
 #include <ctime>
 
