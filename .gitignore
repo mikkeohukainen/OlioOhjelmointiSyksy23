@@ -1,0 +1,31 @@
+# Ignore build directory
+build-*/
+
+# Ignore .user settings, which are user-specific
+*.user
+*.user.*
+
+# Ignore other unnecessary files
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.autosave
+
+# Compiled Object files
+*.o
+*.obj
+
+# Precompiled Headers
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.l
+
+# Executables
+*.exe
