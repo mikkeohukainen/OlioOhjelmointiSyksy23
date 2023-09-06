@@ -9,6 +9,7 @@ ItalianChef::ItalianChef(string a) : Chef(a)
 ItalianChef::~ItalianChef()
 {
     //cout << "Chef " << name << " destructor\n";
+
 }
 
 string ItalianChef::getName()
