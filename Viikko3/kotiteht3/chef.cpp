@@ -2,7 +2,7 @@
 
 Chef::Chef(string a)
 {
-    name = a;
+    name = a;   // Assign the string to variable 'name'
     cout << "Chef " << name << " constructor\n";
 }
 

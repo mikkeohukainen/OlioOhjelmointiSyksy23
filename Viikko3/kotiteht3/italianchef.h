@@ -5,12 +5,14 @@
 class ItalianChef : public Chef
 {
 public:
-    ItalianChef(string a);
-    ~ItalianChef();
+    ItalianChef(string, int, int);  // Constructor, takes 3 variables
+    ~ItalianChef();                 // Destructor
 
-    string getName();
+    string getName();               // Method definitions
     void makePasta();
-
+private:
+    int water;           // Variables for secret recipe
+    int flour;
 
 };
 

@@ -2,16 +2,13 @@
 
 int main()
 {
-    Chef Jyrki("Jyrki");
+    // Create object Mario from class ItalianChef
+    // Assign name: 'Mario', water: 100 and flour: 250 to the constructor
 
-    ItalianChef Mario("Mario");
+    ItalianChef Mario("Mario", 100, 250);
 
-    Jyrki.makeSalad();
-
+    // Call object Mario's makePasta() -method
     Mario.makePasta();
-
-    Jyrki.makeSoup();
-
 
     return 0;
 }
