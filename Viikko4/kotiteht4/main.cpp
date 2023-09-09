@@ -2,18 +2,12 @@
 
 using namespace std;
 
-#include "katutaso.h"
+#include "kerrostalo.h"
 
 int main()
 {
-    Katutaso katutasonOlio;
-
-    //katutasonOlio.maaritaAsunnot();
-
-    //katutasonOlio.Kerros::maaritaAsunnot();
-
-    cout << "Katutason ja perityn kerroksen kulutus, kun hinta = 1, on "
-         << katutasonOlio.laskeKulutus(1) + katutasonOlio.Kerros::laskeKulutus(1) << endl;
+    Kerrostalo talo_1; // main() -funktiossa ei tehdä muuta kuin
+                       // luodaan olio nimeltä talo_1 luokasta Kerrostalo
 
     return 0;
 }

@@ -5,12 +5,7 @@ Asunto::Asunto()
     cout << "Asunto luotu\n";
 }
 
-Asunto::~Asunto()
-{
-
-}
-
-void Asunto::maarita(int a, int b)
+void Asunto::maarita(int a, int b)  // Asetetaan parametrien arvot jäsenmuuttujiin
 {
     asukasMaara = a;
     neliot = b;
@@ -18,8 +13,8 @@ void Asunto::maarita(int a, int b)
     cout << "Asunto maaritetty: asukkaita = " << asukasMaara << " nelioita = " << neliot << endl;
 }
 
-double Asunto::laskeKulutus(double a)
+double Asunto::laskeKulutus(double a)   // Kulutus = hinta * asukkaiden määrä * neliömäärä
 {
     double kulutus = a * asukasMaara * neliot;
-    return kulutus;
+    return kulutus;                     // Palautetaan kulutus
 }
