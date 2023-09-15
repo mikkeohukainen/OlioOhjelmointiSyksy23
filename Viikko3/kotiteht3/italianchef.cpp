@@ -5,7 +5,7 @@ ItalianChef::ItalianChef(string a, int x, int y)
       water(x), // Set the amount of water and flour
       flour(y)
 {
-
+    //cout << "Chef " << name << " constructor\n"; // This is commented to avoid two constructor messages
 }
 
 ItalianChef::~ItalianChef()
