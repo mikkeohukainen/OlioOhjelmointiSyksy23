@@ -1,11 +1,11 @@
 #include "italianchef.h"
 
-ItalianChef::ItalianChef(string a, int x, int y) : Chef(a)  // Add base class destructor
+ItalianChef::ItalianChef(string a, int x, int y)
+    : Chef(a),  // Pass 'a' to base class constructor
+      water(x), // Set the amount of water and flour
+      flour(y)
 {
-    //name = a;
-    //cout << "Chef " << name << " constructor\n";
-    water = x;  // Set the amount of water
-    flour = y;  // Set the amount of flour
+
 }
 
 ItalianChef::~ItalianChef()
