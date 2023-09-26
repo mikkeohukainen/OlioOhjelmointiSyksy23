@@ -7,6 +7,7 @@ DeviceDisplay::DeviceDisplay() : displayResolution(0)
 
 void DeviceDisplay::setDisplayResolution()
 {
+    cout << "Set Display Resolution: ";
     while(!(cin >> displayResolution))
     {
         cout << "*Invalid input!*\nTry again: ";

@@ -7,6 +7,7 @@ DeviceMouse::DeviceMouse() : primaryButton(0)
 
 void DeviceMouse::setPrimaryButton()
 {
+    cout << "Set Mouse Primary Button: ";
     while(!(cin >> primaryButton))
     {
         cout << "*Invalid input!*\nTry again: ";

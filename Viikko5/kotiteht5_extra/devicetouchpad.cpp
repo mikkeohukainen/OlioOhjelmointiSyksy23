@@ -7,6 +7,7 @@ DeviceTouchPad::DeviceTouchPad() : touchPadSensitivity(0)
 
 void DeviceTouchPad::setTouchPadSensitivity()
 {
+    cout << "Set TouchPad Sensitivity: ";
     while(!(cin >> touchPadSensitivity))
     {
         cout << "*Invalid input!*\nTry again: ";
