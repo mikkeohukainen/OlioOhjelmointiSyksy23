@@ -9,7 +9,7 @@ public:
     ~Katutaso();
 
     virtual void maaritaAsunnot() override; // Kerrotaan kääntäjälle, että tätä metodia aiotaan muokata
-    double laskeKulutus(double);
+    virtual double laskeKulutus(double) override;
 
 private:
     Asunto * asunto1;   // Luodaan kaksi pointeria pinosta,

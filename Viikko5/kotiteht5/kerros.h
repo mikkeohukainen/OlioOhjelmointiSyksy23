@@ -9,8 +9,8 @@ public:
     Kerros();
     virtual ~Kerros();
 
-    virtual void maaritaAsunnot();  // Perivä luokka voi muokata tätä metodia
-    double laskeKulutus(double);
+    virtual void maaritaAsunnot();  // Perivä luokka voi muokata näitä
+    virtual double laskeKulutus(double);
 
 private:
     Asunto * as1;   // Luodaan neljä pointeria pinosta,

@@ -11,8 +11,8 @@ public:
     double laskeKulutus(double);
 
 private:
-    Katutaso * ekaKerros;   // Luodaan yksi Katutaso-tyyppinen pointeri pinosta
-    Kerros * tokaKerros;    // Luodaan kaksi Kerros-tyyppistä pointeria pinosta
+    Kerros * ekaKerros;   // Luodaan kolme Kerros-tyyppistä pointeria pinosta
+    Kerros * tokaKerros;
     Kerros * kolmasKerros;
 };
 
