@@ -8,7 +8,7 @@ public:
     Katutaso();
     ~Katutaso();
 
-    virtual void maaritaAsunnot() override; // Kerrotaan kääntäjälle, että tätä metodia aiotaan muokata
+    virtual void maaritaAsunnot() override;         // Kerrotaan kääntäjälle, että näitä aiotaan muokata
     virtual double laskeKulutus(double) override;
 
 private:
