@@ -106,8 +106,8 @@ void MyDeviceUI::uiSetDisplayInformation()
 
 void MyDeviceUI::uiShowDeviceInformation()
 {
-    cout << "\nDEVICE INFORMATION\n"
-         << "==================\n";
+    cout << "\n  DEVICE INFORMATION\n"
+         << "  ==================\n";
     cout << "\n  --MOUSE--\n"
          << "  ID: " << objectDeviceMouse->getDeviceID() << endl
          << "  Primary Button: " << objectDeviceMouse->getPrimaryButton() << "\n\n";
