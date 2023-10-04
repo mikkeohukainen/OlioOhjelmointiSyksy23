@@ -10,22 +10,22 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    connect(ui->btnN0, SIGNAL(clicked()), this, SLOT(btnN0Handler()));
-    connect(ui->btnN1, SIGNAL(clicked()), this, SLOT(btnN1Handler()));
-    connect(ui->btnN2, SIGNAL(clicked()), this, SLOT(btnN2Handler()));
-    connect(ui->btnN3, SIGNAL(clicked()), this, SLOT(btnN3Handler()));
-    connect(ui->btnN4, SIGNAL(clicked()), this, SLOT(btnN4Handler()));
-    connect(ui->btnN5, SIGNAL(clicked()), this, SLOT(btnN5Handler()));
-    connect(ui->btnN6, SIGNAL(clicked()), this, SLOT(btnN6Handler()));
-    connect(ui->btnN7, SIGNAL(clicked()), this, SLOT(btnN7Handler()));
-    connect(ui->btnN8, SIGNAL(clicked()), this, SLOT(btnN8Handler()));
-    connect(ui->btnN9, SIGNAL(clicked()), this, SLOT(btnN9Handler()));
-    connect(ui->btnAdd, SIGNAL(clicked()), this, SLOT(btnAddHandler()));
-    connect(ui->btnSub, SIGNAL(clicked()), this, SLOT(btnSubHandler()));
-    connect(ui->btnMul, SIGNAL(clicked()), this, SLOT(btnMulHandler()));
-    connect(ui->btnDiv, SIGNAL(clicked()), this, SLOT(btnDivHandler()));
-    connect(ui->btnEnter, SIGNAL(clicked()), this, SLOT(btnEnterHandler()));
-    connect(ui->btnClear, SIGNAL(clicked()), this, SLOT(btnClearHandler()));
+    connect(ui->btnN0, SIGNAL(clicked()), this, SLOT(numberClickedHandler()));
+    connect(ui->btnN1, SIGNAL(clicked()), this, SLOT(numberClickedHandler()));
+    connect(ui->btnN2, SIGNAL(clicked()), this, SLOT(numberClickedHandler()));
+    connect(ui->btnN3, SIGNAL(clicked()), this, SLOT(numberClickedHandler()));
+    connect(ui->btnN4, SIGNAL(clicked()), this, SLOT(numberClickedHandler()));
+    connect(ui->btnN5, SIGNAL(clicked()), this, SLOT(numberClickedHandler()));
+    connect(ui->btnN6, SIGNAL(clicked()), this, SLOT(numberClickedHandler()));
+    connect(ui->btnN7, SIGNAL(clicked()), this, SLOT(numberClickedHandler()));
+    connect(ui->btnN8, SIGNAL(clicked()), this, SLOT(numberClickedHandler()));
+    connect(ui->btnN9, SIGNAL(clicked()), this, SLOT(numberClickedHandler()));
+    connect(ui->btnAdd, SIGNAL(clicked()), this, SLOT(addSubMulDivClickHandler()));
+    connect(ui->btnSub, SIGNAL(clicked()), this, SLOT(addSubMulDivClickHandler()));
+    connect(ui->btnMul, SIGNAL(clicked()), this, SLOT(addSubMulDivClickHandler()));
+    connect(ui->btnDiv, SIGNAL(clicked()), this, SLOT(addSubMulDivClickHandler()));
+    connect(ui->btnEnter, SIGNAL(clicked()), this, SLOT(clearAndEnterClickhandler()));
+    connect(ui->btnClear, SIGNAL(clicked()), this, SLOT(clearAndEnterClickhandler()));
 
 }
 
@@ -133,84 +133,86 @@ void MainWindow::resetLineEdits()
     ui->txtResult->setText("");
 }
 
-void MainWindow::btnAddHandler()
-{
-    addSubMulDivClickHandler();
-}
+// Alla olevia erillisiä handlereita ei tarvita
 
-void MainWindow::btnSubHandler()
-{
-    addSubMulDivClickHandler();
-}
+//void MainWindow::btnAddHandler()
+//{
+//    addSubMulDivClickHandler();
+//}
 
-void MainWindow::btnMulHandler()
-{
-    addSubMulDivClickHandler();
-}
+//void MainWindow::btnSubHandler()
+//{
+//    addSubMulDivClickHandler();
+//}
 
-void MainWindow::btnDivHandler()
-{
-    addSubMulDivClickHandler();
-}
+//void MainWindow::btnMulHandler()
+//{
+//    addSubMulDivClickHandler();
+//}
 
-void MainWindow::btnEnterHandler()
-{
-    clearAndEnterClickhandler();
-}
+//void MainWindow::btnDivHandler()
+//{
+//    addSubMulDivClickHandler();
+//}
 
-void MainWindow::btnClearHandler()
-{
-    clearAndEnterClickhandler();
-}
+//void MainWindow::btnEnterHandler()
+//{
+//    clearAndEnterClickhandler();
+//}
 
-void MainWindow::btnN0Handler()
-{
-    numberClickedHandler();
-}
+//void MainWindow::btnClearHandler()
+//{
+//    clearAndEnterClickhandler();
+//}
 
-void MainWindow::btnN1Handler()
-{
-    numberClickedHandler();
-}
+//void MainWindow::btnN0Handler()
+//{
+//    numberClickedHandler();
+//}
 
-void MainWindow::btnN2Handler()
-{
-    numberClickedHandler();
-}
+//void MainWindow::btnN1Handler()
+//{
+//    numberClickedHandler();
+//}
 
-void MainWindow::btnN3Handler()
-{
-    numberClickedHandler();
-}
+//void MainWindow::btnN2Handler()
+//{
+//    numberClickedHandler();
+//}
 
-void MainWindow::btnN4Handler()
-{
-    numberClickedHandler();
-}
+//void MainWindow::btnN3Handler()
+//{
+//    numberClickedHandler();
+//}
 
-void MainWindow::btnN5Handler()
-{
-    numberClickedHandler();
-}
+//void MainWindow::btnN4Handler()
+//{
+//    numberClickedHandler();
+//}
 
-void MainWindow::btnN6Handler()
-{
-    numberClickedHandler();
-}
+//void MainWindow::btnN5Handler()
+//{
+//    numberClickedHandler();
+//}
 
-void MainWindow::btnN7Handler()
-{
-    numberClickedHandler();
-}
+//void MainWindow::btnN6Handler()
+//{
+//    numberClickedHandler();
+//}
 
-void MainWindow::btnN8Handler()
-{
-    numberClickedHandler();
-}
+//void MainWindow::btnN7Handler()
+//{
+//    numberClickedHandler();
+//}
 
-void MainWindow::btnN9Handler()
-{
-    numberClickedHandler();
-}
+//void MainWindow::btnN8Handler()
+//{
+//    numberClickedHandler();
+//}
+
+//void MainWindow::btnN9Handler()
+//{
+//    numberClickedHandler();
+//}
 
 
