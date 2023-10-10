@@ -17,13 +17,14 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-    void timeout();
+    //void timeout();
 
 public slots:
     void handleStart();
     void handleStop();
     void handleTimeSelect();
     void handleSwitch();
+    void timeout();
 
 private:
     Ui::MainWindow *ui;
